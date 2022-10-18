@@ -9,7 +9,25 @@
 
 <body>
     <h1>Maak je afspraak.</h1>
-    
+    <form action="mailto:naam@server.com?subject=Afspraak" method="post" enctype="text/plain">
+        <div>
+            <label>Datum:
+                <input type="date" name="Datum" required />
+            </label>
+        </div>
+        <div>
+            <label>Tijd:
+                <input type="time" name="Tijd" required>
+            </label>
+        </div>
+        <div>
+            <label>Reden afspraak:<br>
+                <textarea placeholder="Geef hier de reden voor je afspraak in..." name="Info" cols="60" rows="5">
+                    </textarea>
+            </label>
+        </div>
+        <div><input type="submit" value="Maak afspraak"></div>
+    </form>
 </body>
 
 </html>
